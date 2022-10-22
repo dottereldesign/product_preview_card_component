@@ -22,13 +22,6 @@ body {
   background-color: var(--clr-primary-100);
 }
 
-@media (min-width: 37.5em) {
-  main {
-    width: 630px;
-    margin: 0 auto;
-  }
-}
-
 /* Typography */
 .card__content--h2 {
   font-family: var(--ff-primary-100);
@@ -50,13 +43,23 @@ body {
 
 /* Main */
 main {
-  padding: 1.5em 1em 0 1em;
+  padding: 1em 1em 1em 1em;
+  max-width: 375px;
+  margin: 0 auto;
 }
 
 /* Main Card */
-@media (min-width: 37.5em) {
+
+@media (min-width: 50em) {
   .flex__container--component {
     display: flex;
+  }
+
+  main {
+    width: calc(274px + 300px);
+    max-width: none;
+    width: 630px;
+    margin: 0 auto;
   }
 }
 
@@ -69,7 +72,7 @@ main {
   display: none;
 }
 
-@media (min-width: 37.5em) {
+@media (min-width: 50em) {
   .card__image {
     display: none;
   }
@@ -88,10 +91,10 @@ main {
   max-width: 375px;
 }
 
-@media (min-width: 37.5em) {
+@media (min-width: 50em) {
   .card__content {
     border-radius: 0 10px 10px 0;
-    width: 330px;
+    width: auto;
   }
 }
 
